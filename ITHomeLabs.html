@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>justinthepatchnotes.com</title>
+    <!-- favicon -->
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- favicon -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c185e2d1c9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="navbar" id="myNavbar">
+            <a href="index.html"><img class="nav-img" src="/images/nav/home.png" height="25" width="25">Home</a>
+            <a href="Certifications.html"><img class="nav-img" src="/images/nav/certs.png" height="25" width="25">Certifications</a>
+            <a href="ITHomeLabs.html"><img class="nav-img" src="images/labs1.png" height="25" width="25">IT HomeLabs</a>
+            <a href="LinuxHomeLabs.html"><img class="nav-img" src="images/linux.PNG" height="25" width="25">Linux HomeLabs
+                
+                </a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
+            <img id="nav-icon" src="/images/nav/Hamburg.png" alt="nav button" height="55" width="55">
+            </a>
+        </div>
+    </header>
+
+<script>
+    function toggleNavbar() {
+        var x = document.getElementById("myNavbar");
+        if (x.className === "navbar") {
+            x.className += " responsive";
+        } else {
+            x.className = "navbar";
+        }
+
+        // Toggle the icon image
+        var icon = document.getElementById('nav-icon');
+        if (icon.src.includes('Hamburg.png')) {
+            icon.src = '/images/nav/Hamburg2.png';
+        } else {
+            icon.src = '/images/nav/Hamburg.png';
+        }
+    }
+
+    var icon = document.getElementById('nav-icon');
+        if (icon.src.includes('Hamburg.png')) {
+            icon.src = '/images/nav/Hamburg.png';
+            icon.style.width = '30px'; // Set new width
+            icon.style.height = '30px'; // Set new height
+        } else {
+            icon.src = '/images/nav/Hamburg2.png';
+            icon.style.width = '40px'; // Set back to original width
+            icon.style.height = '30px'; // Set back to original height
+        }
+</script>
+
+<style>
+    .mini {
+      font-size: 1.255em;
+    }
+  </style>
+</head>
+<div class="section">
+
+<h2 style="background-color: #2f5267; font-size: 30px;" class="grey"><img style="margin-bottom: -12px;" src="/images/labs1.png" height="45" width="45">IT HomeLabs</h2>
+
+<img style="  display: block;
+margin-left: auto;
+margin-right: auto;
+"height="200" width="100%"
+ src="svg/hl-main-img.svg">
+
+ <!-- <div id="center-content" class="center-container">
+    <a class="centered-link" style="text-decoration: none;">
+        <h1 class="small-h1">
+            <span style="text-decoration: none;">Click On Images To Enlarge</span>
+            <img src="images/enlarge.PNG" height="35" width="35"> 
+        </h1>
+    </a>
+</div>  -->
+
+
+<div style="width: 100%; height: 15px;"></div>
+
+
+
+<h3 style=" padding-bottom:8px;margin-top: -5px; background-color: #2f5267; font-size: 18px;" id="projects">Creating a Vitural Machine Using Azure <img style="margin-bottom: -10px;" src="images/AD.png" alt="" width="30" height="30"> 
+    </h3>
+    <p>Step-by-step guidance on setting up and configuring a virtual machine in Microsoft Azure's cloud platform.
+
+
+    <div class="modal-container">
+        <div class="image-item" onclick="openModal('modal1', 'Creating a Vitural Machine Using Azure ', 'images/vmname3.png')">
+            <img src="images/vmname3.png" alt="Image 1">
+        </div>
+        <div class="image-item" onclick="openModal('modal2', 'Vitural Machine via Azure -  Windows Homescreen  ', 'images/azurevm.png')">
+            <img src="images/azurevm.png" alt="Image 2">
+        </div>
+    </div>
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal1')">&times;</span>
+        <h4 id="modal1-header"></h4>
+        <img id="modal1-image" src="" alt="Modal Image 1">
+    </div>
+</div>
+
+<div id="modal2" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal2')">&times;</span>
+        <h4 id="modal2-header"></h4>
+        <img id="modal2-image" src="" alt="Modal Image 2">
+    </div>
+</div>
+
+<!--  -->
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal1')">&times;</span>
+        <h4 id="modal1-header"></h4>
+        <img id="modal1-image" src="" alt="Modal Image 1">
+    </div>
+</div>
+
+<div id="modal2" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal2')">&times;</span>
+        <h4 id="modal2-header"></h4>
+        <img id="modal2-image" src="" alt="Modal Image 2">
+    </div>
+</div>
+
+<script>
+    function openModal(modalId, headerText, imageUrl) {
+        document.getElementById(modalId + '-header').innerText = headerText;
+        document.getElementById(modalId + '-image').src = imageUrl;
+        document.getElementById(modalId).style.display = "block";
+    }
+
+    function closeModal(modalId) {
+        document.getElementById(modalId).style.display = "none";
+    }
+</script>
+<p>
+    <a href="https://github.com/justinthepatchnotes/Creating-a-Virtual-Machine-Using-Azure" target="_blank">Creating a Vitural Machine Using Azure</a>
+</p>
+
+</p>
+<!-- end of modal -->
+
+ <!-- end of modal -->
+ <h3 style=" padding-bottom:6px;background-color: #2f5267; font-size: 20px;" id="projects">Configuring Active Directory within Azure VMs <img style="margin-bottom: -5px;" src="images/AD.png" alt="" width="25" height="25">  
+ </h3>
+ <p>A walkthrough of integrating and configuring Active Directory on Azure-based virtual machines for user and group management.
+
+ </p>
+ <ul>
+ </ul>
+ <div class="modal-container">
+ <div class="image-item" onclick="openModal('modal1', 'Active Directory Management Console', 'images/AD3.2.png')">
+     <img src="images/AD3.2.png" alt="Image 1">
+ </div>
+ <div class="image-item" onclick="openModal('modal2', 'Deploying 1000 Users In Active Directory', 'images/AD500.png')">
+     <img src="images/AD500.png" alt="Image 2">
+ </div>
+ </div>
+ 
+ <!-- Modal Structure -->
+ <div id="modal1" class="modal">
+ <div class="modal-content">
+     <span class="close" onclick="closeModal('modal1')">&times;</span>
+     <h4 id="modal1-header"></h4>
+     <img id="modal1-image" src="" alt="Modal Image 1">
+ </div>
+ </div>
+ 
+ <div id="modal2" class="modal">
+ <div class="modal-content">
+     <span class="close" onclick="closeModal('modal2')">&times;</span>
+     <h4 id="modal2-header"></h4>
+     <img id="modal2-image" src="" alt="Modal Image 2">
+ </div>
+ </div>
+ 
+ <!--  -->
+ <!-- Modal Structure -->
+ <div id="modal1" class="modal">
+ <div class="modal-content">
+     <span class="close" onclick="closeModal('modal1')">&times;</span>
+     <h4 id="modal1-header"></h4>
+     <img id="modal1-image" src="" alt="Modal Image 1">
+ </div>
+ </div>
+ 
+ <div id="modal2" class="modal">
+ <div class="modal-content">
+     <span class="close" onclick="closeModal('modal2')">&times;</span>
+     <h4 id="modal2-header"></h4>
+     <img id="modal2-image" src="" alt="Modal Image 2">
+ </div>
+ </div>
+ 
+ <script>
+ function openModal(modalId, headerText, imageUrl) {
+     document.getElementById(modalId + '-header').innerText = headerText;
+     document.getElementById(modalId + '-image').src = imageUrl;
+     document.getElementById(modalId).style.display = "block";
+ }
+ 
+ function closeModal(modalId) {
+     document.getElementById(modalId).style.display = "none";
+ }
+ </script>
+ <p>
+     <a href="https://github.com/justinthepatchnotes/Configuring-Active-Directory-within-Azure-VMs" target="_blank">Configuring Active Directory within Azure VMs </a>
+ </p>
+
+ <!-- end of modal -->
+    <!-- end of modal -->
+ <h3 style=" padding-bottom:6px; background-color: #2f5267; font-size: 20px;" id="projects">Network File Shares and Permissions with Active Directory  
+    <img style="margin-bottom: -5px;" src="images/NFS.png" alt="" width="25" height="25"></h3>
+    <p>Configuring file share permissions for users and groups to allow or deny access based on roles.</p>
+   
+    </p>
+    <div class="modal-container">
+    <div class="image-item" onclick="openModal('modal1', 'Granting RWX Access to Accountants OU', 'images/NFS6.0.PNG')">
+        <img src="images/NFS6.0.PNG" alt="Image 1">
+    </div>
+    <div class="image-item" onclick="openModal('modal2', 'Creating Users That Has RWX Access To Accounting Files', 'images/NFS7.1.PNG')">
+        <img src="images/NFS7.1.PNG" alt="Image 2">
+    </div>
+    </div>
+    
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal1')">&times;</span>
+        <h4 id="modal1-header"></h4>
+        <img id="modal1-image" src="" alt="Modal Image 1">
+    </div>
+    </div>
+    
+    <div id="modal2" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal2')">&times;</span>
+        <h4 id="modal2-header"></h4>
+        <img id="modal2-image" src="" alt="Modal Image 2">
+    </div>
+    </div>
+    
+    <!--  -->
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal1')">&times;</span>
+        <h4 id="modal1-header"></h4>
+        <img id="modal1-image" src="" alt="Modal Image 1">
+    </div>
+    </div>
+    
+    <div id="modal2" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('modal2')">&times;</span>
+        <h4 id="modal2-header"></h4>
+        <img id="modal2-image" src="" alt="Modal Image 2">
+    </div>
+    </div>
+    
+    <script>
+    function openModal(modalId, headerText, imageUrl) {
+        document.getElementById(modalId + '-header').innerText = headerText;
+        document.getElementById(modalId + '-image').src = imageUrl;
+        document.getElementById(modalId).style.display = "block";
+    }
+    
+    function closeModal(modalId) {
+        document.getElementById(modalId).style.display = "none";
+    }
+    </script>
+    <p>
+        <a href="https://github.com/justinthepatchnotes/-Network-File-Shares-and-Permissions-with-Active-Directory" target="_blank">Network File Shares and Permissions with Active Directory</a>
+    </p>
+    <!-- end of modal -->
+  <!-- end of modal -->
+ <h3 style=" padding-bottom:6px; background-color: #2f5267; font-size: 20px;" id="projects">Network Security Groups (NSGs) and Inspecting Network Protocols  
+ <img style="margin-bottom: -5px;" src="images/NSG.png" alt="" width="25" height="25"></h3>
+ <p>Exploring NSGs in Azure to control network traffic and analyzing network protocols for security purposes.
+
+ </p>
+ <div class="modal-container">
+ <div class="image-item" onclick="openModal('modal1', 'ICMP Traffic After Being Enabled', 'images/NSG4.4.png')">
+     <img src="images/NSG4.4.png" alt="Image 1">
+ </div>
+ <div class="image-item" onclick="openModal('modal2', 'Creating a NSG Rule to Block ICMP Traffic', 'images/NSG4.22.png')">
+     <img src="images/NSG4.22.png" alt="Image 2">
+ </div>
+ </div>
+ 
+ <!-- Modal Structure -->
+ <div id="modal1" class="modal">
+ <div class="modal-content">
+     <span class="close" onclick="closeModal('modal1')">&times;</span>
+     <h4 id="modal1-header"></h4>
+     <img id="modal1-image" src="" alt="Modal Image 1">
+ </div>
+ </div>
+ 
+ <div id="modal2" class="modal">
+ <div class="modal-content">
+     <span class="close" onclick="closeModal('modal2')">&times;</span>
+     <h4 id="modal2-header"></h4>
+     <img id="modal2-image" src="" alt="Modal Image 2">
+ </div>
+ </div>
+ 
+ <!--  -->
+ <!-- Modal Structure -->
+ <div id="modal1" class="modal">
+ <div class="modal-content">
+     <span class="close" onclick="closeModal('modal1')">&times;</span>
+     <h4 id="modal1-header"></h4>
+     <img id="modal1-image" src="" alt="Modal Image 1">
+ </div>
+ </div>
+ 
+ <div id="modal2" class="modal">
+ <div class="modal-content">
+     <span class="close" onclick="closeModal('modal2')">&times;</span>
+     <h4 id="modal2-header"></h4>
+     <img id="modal2-image" src="" alt="Modal Image 2">
+ </div>
+ </div>
+ 
+ <script>
+ function openModal(modalId, headerText, imageUrl) {
+     document.getElementById(modalId + '-header').innerText = headerText;
+     document.getElementById(modalId + '-image').src = imageUrl;
+     document.getElementById(modalId).style.display = "block";
+ }
+ 
+ function closeModal(modalId) {
+     document.getElementById(modalId).style.display = "none";
+ }
+ </script>
+ <p>
+     <a href="https://github.com/justinthepatchnotes/Network-Security-Groups-NSGs-and-Inspecting-Network-Protocols" target="_blank">Network Security Groups (NSGs) and Inspecting Network Protocols</a>
+ </p>
+ <!-- end of modal -->
+
+    <h3 style="padding-bottom: 10px; background-color: #2f5267; font-size: 18px; text-align: left; " id="projects">
+        Jira: Help Desk Ticket Lifecycle
+      <img style="margin-bottom: -5px;" src="images/osTicket.png" alt="" width="25" height="25">
+    </h3>
+<p>Help Desk Lifecycle From Creation to Resolution</p>
+
+</p>
+<div class="modal-container">
+<div class="image-item" onclick="openModal('modal1', 'Help Desk Ticket Creation', 'images/LS1.2.png')">
+    <img src="images/LS1.2.png" alt="Image 1">
+</div>
+<div class="image-item" onclick="openModal('modal2', 'Help Desk Ticket Resolution', 'images/ls3.2.png')">
+    <img src="images/ls3.2.png" alt="Image 2">
+</div>
+</div>
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+<div class="modal-content">
+    <span class="close" onclick="closeModal('modal1')">&times;</span>
+    <h4 id="modal1-header"></h4>
+    <img id="modal1-image" src="" alt="Modal Image 1">
+</div>
+</div>
+
+<div id="modal2" class="modal">
+<div class="modal-content">
+    <span class="close" onclick="closeModal('modal2')">&times;</span>
+    <h4 id="modal2-header"></h4>
+    <img id="modal2-image" src="" alt="Modal Image 2">
+</div>
+</div>
+
+<!--  -->
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+<div class="modal-content">
+    <span class="close" onclick="closeModal('modal1')">&times;</span>
+    <h4 id="modal1-header"></h4>
+    <img id="modal1-image" src="" alt="Modal Image 1">
+</div>
+</div>
+
+<div id="modal2" class="modal">
+<div class="modal-content">
+    <span class="close" onclick="closeModal('modal2')">&times;</span>
+    <h4 id="modal2-header"></h4>
+    <img id="modal2-image" src="" alt="Modal Image 2">
+</div>
+</div>
+
+<script>
+function openModal(modalId, headerText, imageUrl) {
+    document.getElementById(modalId + '-header').innerText = headerText;
+    document.getElementById(modalId + '-image').src = imageUrl;
+    document.getElementById(modalId).style.display = "block";
+}
+
+function closeModal(modalId) {
+    document.getElementById(modalId).style.display = "none";
+}
+</script>
+<p>
+    <a href="https://github.com/justinthepatchnotes/Jira-Ticket-Lifecycle-Examples/blob/main/README.md" target="_blank">    <a href="https://github.com/justinthepatchnotes/Jira-Ticket-Lifecycle-Examples/blob/main/README.md" target="_blank">Jira: Ticket Lifecycle Examples</a>
+</a>
+    </p>
+    <!-- end of modal -->
+ 
+ <!-- end of modal -->
+    <h3 style="padding-bottom: 10px; background-color: #2f5267; font-size: 20px; text-align: left; padding: 5px;" id="projects">
+        Jira: Service Level Agreement Configuration 
+
+        <img style="margin-bottom: -5px;" margin-left: 5px;" src="images/osTicket.png" alt="" width="25" height="25">
+</div>
+<p>Crating a Service Level Aggreement In Jira Service Management.
+
+</p>
+<ul>
+</ul>
+<div class="modal-container">
+<div class="image-item" onclick="openModal('modal1', 'Jira Project Service Management Homescreen', 'images/jira1.2.png')">
+    <img src="images/jira1.2.png" alt="Image 1">
+</div>
+<div class="image-item" onclick="openModal('modal2', 'Creating Parameters / Rules For Our SLA ', 'images/jira2.1.png')">
+    <img src="images/jira2.1.png" alt="Image 2">
+</div>
+</div>
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+<div class="modal-content">
+    <span class="close" onclick="closeModal('modal1')">&times;</span>
+    <h4 id="modal1-header"></h4>
+    <img id="modal1-image" src="" alt="Modal Image 1">
+</div>
+</div>
+
+<div id="modal2" class="modal">
+<div class="modal-content">
+    <span class="close" onclick="closeModal('modal2')">&times;</span>
+    <h4 id="modal2-header"></h4>
+    <img id="modal2-image" src="" alt="Modal Image 2">
+</div>
+</div>
+
+<!--  -->
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+<div class="modal-content">
+    <span class="close" onclick="closeModal('modal1')">&times;</span>
+    <h4 id="modal1-header"></h4>
+    <img id="modal1-image" src="" alt="Modal Image 1">
+</div>
+</div>
+
+<div id="modal2" class="modal">
+<div class="modal-content">
+    <span class="close" onclick="closeModal('modal2')">&times;</span>
+    <h4 id="modal2-header"></h4>
+    <img id="modal2-image" src="" alt="Modal Image 2">
+</div>
+</div>
+<p>
+    <a href="https://github.com/justinthepatchnotes/Jira-Service-Level-Agreement-Configuration" target="_blank">Jira: Service Level Agreement Configuration </a>
+</p>
+
+
+<script>
+function openModal(modalId, headerText, imageUrl) {
+    document.getElementById(modalId + '-header').innerText = headerText;
+    document.getElementById(modalId + '-image').src = imageUrl;
+    document.getElementById(modalId).style.display = "block";
+}
+
+function closeModal(modalId) {
+    document.getElementById(modalId).style.display = "none";
+}
+</script>
+<!-- end of modal -->
+<h3 style="padding-bottom:10px; background-color: #2f5267; font-size: 18px; text-align: left; " id="projects">
+    Creating a Windows Bootable Drive
+    <img style="margin-bottom: -12px;" src="images/FlashDrive.png" alt="" width="35" height="35">
+  </h3>
+  <p>Guide to creating a bootable USB drive for Windows installation using ISO files and disk utilities.
+
+
+
+
+
+
+  </p>
+
+
+  <div class="modal-container">
+    <div class="image-item" onclick="openModal('modal1', 'Windows Installation Media Tool', 'images/Bootable1.png')">
+        <img src="images/Bootable1.png" alt="Windows Instal image">
+    </div>
+    
+    
+    <div class="image-item" onclick="openModal('modal2', 'Windows EULA', 'images/winmedia.png')">
+        <img src="images/winmedia.png" alt="Image 2">
+    </div>
+</div>
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+<div class="modal-content">
+    <span class="close" onclick="closeModal('modal1')">&times;</span>
+    <h4 id="modal1-header"></h4>
+    <img id="modal1-image" src="" alt="Modal Image 1">
+</div>
+</div>
+
+<div id="modal2" class="modal">
+<div class="modal-content">
+    <span class="close" onclick="closeModal('modal2')">&times;</span>
+    <h4 id="modal2-header"></h4>
+    <img id="modal2-image" src="" alt="Modal Image 2">
+</div>
+</div>
+
+<!--  -->
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+<div class="modal-content">
+    <span class="close" onclick="closeModal('modal1')">&times;</span>
+    <h4 id="modal1-header"></h4>
+    <img id="modal1-image" src="" alt="Modal Image 1">
+</div>
+</div>
+
+<div id="modal2" class="modal">
+<div class="modal-content">
+    <span class="close" onclick="closeModal('modal2')">&times;</span>
+    <h4 id="modal2-header"></h4>
+    <img id="modal2-image" src="" alt="Modal Image 2">
+</div>
+</div>
+
+<script>
+function openModal(modalId, headerText, imageUrl) {
+    document.getElementById(modalId + '-header').innerText = headerText;
+    document.getElementById(modalId + '-image').src = imageUrl;
+    document.getElementById(modalId).style.display = "block";
+}
+
+function closeModal(modalId) {
+    document.getElementById(modalId).style.display = "none";
+}
+</script>
+<p>
+    <a href="https://github.com/justinthepatchnotes/Creating-a-Windows-Bootable-Drive" target="_blank">Creating a Windows Bootable Drive</a>
+</p>
+ 
+<div style="width: 100%; height: 15px;"></div>
+ 
+
+    <div class="center-container">
+    <a class="centered-link" href="/LinuxHomeLabs.html"style="text-decoration: none;">
+        <h1 class="small-h1">
+            <img style="margin-top: -7px;" class="up nav-img" src="/images/nav/see more.PNG" height="35" width="35" alt="View Certifications">
+            <span class="red">View 
+                <span class="white">Linux HomeLabs</span>
+            </span>
+        </h1>
+    </a>
+</div>
+<div style="width: 100%; height: 15px;"></div>
+
+
+<button style="margin-right:6px ; margin-bottom: 29px ;  " id="scrollUpBtn" title="Go to top"><img src="images/UpArrow.png" width="50" height="50"></button>
+<script src="button.js"></script>
+
+<div>&nbsp;</div> 
+<footer >
+    <div class="footer-items">
+        <a href="https://www.linkedin.com/in/justinthepatchnotes/" target="_blank">
+            <img src="images/Dark-link.jpg" alt="linkedin logo" height="45" width="45"></a>
+            &nbsp;
+            &nbsp;
+            <a href="https://github.com/justinthepatchnotes"target="_blank">
+                <img src="images/footer/github.png" alt="github logo" height="45" width="45"></a>
+                &nbsp;
+                &nbsp;
+            <a href="https://medium.com/@justinthepatchnotes" target="_blank">
+            <img src="images/MEDIUUM.png" alt="medium logo" height="45" width="45"></a>
+            &nbsp;
+            &nbsp;
+            <a href="mailto:justinthepatchnotes@gmail.com">
+            <img src="images/footer/gmail.png" alt="gmail logo" height="45" width="45"></a>
+    </div>
+</footer>
+</body>
+</html>
