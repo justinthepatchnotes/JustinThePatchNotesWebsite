@@ -210,7 +210,7 @@ font-size: 1.75em;
 
 .minis {
   background-color: #aac4df;
-  border-radius: 5px;
+  border-radius: 1px;
   width: fit-content;
   font-size: 15px;
   padding: 6px; /* Adjust padding as needed */
