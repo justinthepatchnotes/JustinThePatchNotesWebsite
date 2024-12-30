@@ -223,7 +223,7 @@ font-size: 1.75em;
 .modal-container {
   display: flex;
   justify-content: center;
-  gap: 25px; /* Space between images */
+  gap: 10px; /* Space between images */
   text-align: center;
 }
 .image-item {
