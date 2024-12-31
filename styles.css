@@ -237,7 +237,6 @@ font-size: 1.75em;
 .image-item img {
   max-width: 100%; /* Ensure responsiveness */
   height: auto;
-  border-radius: 10px;
 }
 /* Modal styles */
 .modal {
