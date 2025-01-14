@@ -700,7 +700,7 @@ hr {
   display: block;
   color: #CBCBCB;
   text-align: center;
-  padding: 15px 15px;
+  padding: 10px 10px;
   text-decoration: none;
   margin: -5px;
   border-radius: 5px;
@@ -756,7 +756,8 @@ list-style: none;}
 }
 #thin-bold {
   font-family: "Raleway", sans-serif;
-font-weight: 600;
+  font-weight: 500;
+  line-height: 20px;
 }
 
  /* Certs */
