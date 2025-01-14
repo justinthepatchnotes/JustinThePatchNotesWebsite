@@ -180,8 +180,9 @@ a:active {
 footer {
   border-radius: 5px;
   background: #363636;
-  padding: 5px;
-  border: 1px red solid;
+  padding: 8px;
+  /* border: 1px red solid; */
+  padding-top: 12px;
 }
 
 
@@ -909,7 +910,6 @@ img.more-down1 + img.more-down1 {
       display: flex;
       justify-content: center;
       word-spacing: 10px;
-      border: 1px red solid;
 
       }
       #center {
