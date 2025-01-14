@@ -30,7 +30,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .shields {
   width: auto;
-  height: 36px; /* Maintains the aspect ratio */
+  height: 30px; /* Maintains the aspect ratio */
 }
 
 
