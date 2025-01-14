@@ -7,6 +7,23 @@ padding: 5px;
 height: auto;
 margin-top: 10px;
 margin-bottom: 10px;
+/* updated 1/14 */
+font-size: 18px; 
+
+/* Apply consistent line spacing to all text elements */
+body {
+  line-height: 1.5; /* Adjust the value as needed */
+}
+
+/* Optionally, you can target specific elements */
+p {
+  line-height: 1.6; /* Adjust for paragraphs */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.4; /* Adjust for headers */
+}
+
 }
 
 #no-link {
