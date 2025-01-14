@@ -8,7 +8,8 @@ height: auto;
 margin-top: 10px;
 margin-bottom: 10px;
 /* updated 1/14 */
-font-size: 18px; 
+font-family: "Raleway", sans-serif;
+font-size: 22px; 
 
 /* Apply consistent line spacing to all text elements */
 body {
@@ -25,6 +26,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 }
+
+.shields {
+  width: auto;
+  height: 40px; /* Maintains the aspect ratio */
+}
+
 
 #no-link {
   text-decoration: none;
@@ -494,7 +501,7 @@ word-spacing: 0%;}
   padding: 2px;
 }
 .dev {
-  font-family: "Raleway", sans-serif;
+  ily: "Raleway", sans-serif;
   color: #CBCBCB;
   background:#718aa5;
   border-radius: 5px;
@@ -585,8 +592,8 @@ hr {
 #scrollUpBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed position */
-  bottom: 80px; /* Place the button at the bottom of the page */
-  right: -13px; /* Place the button 30px from the right */
+  bottom: 99px; /* Place the button at the bottom of the page */
+  right: 60px; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   background-color: transparent; /* Set a background color */
