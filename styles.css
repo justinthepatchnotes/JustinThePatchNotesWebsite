@@ -504,7 +504,7 @@ word-spacing: 0%;}
   padding: 2px;
 }
 .dev {
-  ily: "Raleway", sans-serif;
+  font-family: "Raleway", sans-serif;
   color: #CBCBCB;
   background:#718aa5;
   border-radius: 5px;
