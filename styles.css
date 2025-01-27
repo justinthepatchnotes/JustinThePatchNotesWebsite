@@ -27,6 +27,24 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+.certificates-container {
+  display: flex;
+  justify-content: flex-start; /* Aligns the items to the start (left) */
+  gap: 10px; /* Reduced space between items */
+  padding: 0; /* Removed extra padding */
+}
+
+.certificate-item {
+  text-align: flex-start;
+}
+
+.certificate-img {
+  height: 50%; /* Increased image size */
+  width: 50%;  /* Increased image size */
+  object-fit: contain; /* Keeps the aspect ratio intact */
+}
+
+
 
 .shields {
   width: auto;
