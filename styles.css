@@ -9,7 +9,7 @@ margin-top: 10px;
 margin-bottom: 10px;
 /* updated 1/14 */
 font-family: "Raleway", sans-serif;
-font-size: 18px; 
+font-size: 20px; 
 
 /* Apply consistent line spacing to all text elements */
 body {
@@ -713,7 +713,6 @@ hr {
 }
 
 .navbar a:hover {
-  height: 40px;
   background-color: #2D2D2D;
   color: #CBCBCB;
   border-radius: 10px;
