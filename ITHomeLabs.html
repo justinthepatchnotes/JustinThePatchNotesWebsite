@@ -43,32 +43,23 @@
 
     <script>
         function toggleNavbar() {
-            var x = document.getElementById("myNavbar");
-            if (x.className === "navbar") {
-                x.className += " responsive";
-            } else {
-                x.className = "navbar";
-            }
+            var navbar = document.getElementById("myNavbar");
+            navbar.classList.toggle("responsive");
     
             // Toggle the icon image
-            var icon = document.getElementById('nav-icon');
-            if (icon.src.includes('Hamburg.png')) {
-                icon.src = '/images/binary.png';
+            var icon = document.getElementById("nav-icon");
+            var src = icon.src;
+    
+            if (src.includes("Hamburg.png")) {
+                icon.src = "/images/nav/Hamburg2.png";
+                icon.style.width = "30px";
+                icon.style.height = "30px";
             } else {
-                icon.src = '/images/nav/Hamburg.png';
+                icon.src = "/images/nav/Hamburg.png";
+                icon.style.width = "30px";
+                icon.style.height = "30px";
             }
         }
-    
-        var icon = document.getElementById('nav-icon');
-            if (icon.src.includes('Hamburg.png')) {
-                icon.src = '/images/nav/Hamburg.png';
-                icon.style.width = '30px'; // Set new width
-                icon.style.height = '30px'; // Set new height
-            } else {
-                icon.src = '/images/nav/Hamburg2.png';
-                icon.style.width = '40px'; // Set back to original width
-                icon.style.height = '30px'; // Set back to original height
-            }
     </script>
 
 <style>
