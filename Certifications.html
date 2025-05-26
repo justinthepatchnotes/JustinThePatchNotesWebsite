@@ -41,7 +41,35 @@
     </header>
 
 
- index.html
+    <script>
+        function toggleNavbar() {
+            var x = document.getElementById("myNavbar");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+    
+            // Toggle the icon image
+            var icon = document.getElementById('nav-icon');
+            if (icon.src.includes('Hamburg.png')) {
+                icon.src = '/images/binary.PNG';
+            } else {
+                icon.src = '/images/nav/Hamburg.png';
+            }
+        }
+    
+        var icon = document.getElementById('nav-icon');
+            if (icon.src.includes('Hamburg.png')) {
+                icon.src = '/images/nav/Hamburg.png';
+                icon.style.width = '30px'; // Set new width
+                icon.style.height = '30px'; // Set new height
+            } else {
+                icon.src = '/images/binary.PNG';
+                icon.style.width = '40px'; // Set back to original width
+                icon.style.height = '30px'; // Set back to original height
+            }
+    </script>
 
     <style>
         .mini {
