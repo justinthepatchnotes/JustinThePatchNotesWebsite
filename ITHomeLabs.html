@@ -40,28 +40,35 @@
         </div>
     </header>
 
-
     <script>
         function toggleNavbar() {
-            var navbar = document.getElementById("myNavbar");
-            navbar.classList.toggle("responsive");
+            var x = document.getElementById("myNavbar");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
     
             // Toggle the icon image
-            var icon = document.getElementById("nav-icon");
-            var src = icon.src;
-    
-            if (src.includes("Hamburg.png")) {
-                icon.src = "/images/nav/Hamburg2.png";
-                icon.style.width = "30px";
-                icon.style.height = "30px";
+            var icon = document.getElementById('nav-icon');
+            if (icon.src.includes('Hamburg.png')) {
+                icon.src = '/images/binary.PNG';
             } else {
-                icon.src = "/images/nav/Hamburg.png";
-                icon.style.width = "30px";
-                icon.style.height = "30px";
+                icon.src = '/images/nav/Hamburg.png';
             }
         }
+    
+        var icon = document.getElementById('nav-icon');
+            if (icon.src.includes('Hamburg.png')) {
+                icon.src = '/images/nav/Hamburg.png';
+                icon.style.width = '30px'; // Set new width
+                icon.style.height = '30px'; // Set new height
+            } else {
+                icon.src = '/images/binary.PNG';
+                icon.style.width = '40px'; // Set back to original width
+                icon.style.height = '30px'; // Set back to original height
+            }
     </script>
-
 <style>
     .mini {
       font-size: 1.255em;
